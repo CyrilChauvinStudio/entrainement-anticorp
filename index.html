@@ -244,6 +244,38 @@
     font-weight:700;margin-bottom:6px;
   }
 
+  .schema{border:2px solid var(--ink);background:#fff;padding:12px;margin:10px 0 12px;}
+  .sc-title{font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px;}
+  .sc-node{border:2px solid var(--ink);padding:8px 9px;background:var(--paper);min-width:0;}
+  .sc-mot{font-family:'Anton',sans-serif;font-size:17px;line-height:1.15;letter-spacing:0.01em;}
+  .sc-detail{font-size:11.5px;line-height:1.4;margin-top:4px;opacity:0.85;}
+  .sc-flux{display:flex;flex-direction:column;align-items:stretch;}
+  .sc-flux .sc-node{flex:0 0 auto;}
+  .sc-arrow{text-align:center;color:var(--red);font-size:14px;line-height:1.3;padding:2px 0;}
+  .sc-arrow::before{content:'▼';}
+  @media (min-width:520px){
+    .sc-flux{flex-direction:row;}
+    .sc-flux .sc-node{flex:1 1 0;}
+    .sc-arrow{display:flex;align-items:center;padding:0 5px;}
+    .sc-arrow::before{content:'▶';}
+  }
+  .sc-versus{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .sc-versus .sc-node.left{background:var(--paper-dark);border-style:dashed;}
+  .sc-versus .sc-node.right{border-color:var(--red);}
+  .sc-mark{font-weight:700;margin-right:5px;}
+  .sc-versus .left .sc-mark{opacity:0.6;}
+  .sc-versus .right .sc-mark{color:var(--red);}
+  .sc-piliers{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;}
+  .sc-piliers .sc-node{border-top:5px solid var(--red);}
+  .sc-big{font-family:'Anton',sans-serif;font-size:56px;line-height:1;color:var(--red);}
+  .sc-bigdetail{font-size:13px;line-height:1.5;margin:4px 0 8px;}
+  .sc-sub{font-size:11.5px;line-height:1.4;margin-bottom:4px;opacity:0.85;}
+  .sc-source{font-size:10.5px;opacity:0.65;margin-top:6px;}
+  .sc-keep{font-size:12.5px;line-height:1.5;font-weight:700;margin-top:10px;padding-top:8px;border-top:2px solid var(--ink);}
+  .h-model{margin-top:8px;}
+  .h-model summary{font-size:11.5px;cursor:pointer;text-decoration:underline;opacity:0.8;}
+  .h-model .model-answer{margin-top:8px;}
+
   .error-box{
     border:2px solid var(--red);
     color:var(--red-dark);
@@ -302,7 +334,10 @@ Fondateur/porteur : Cyril Chauvin — mais la marque ne se présente JAMAIS sous
 
 POSITIONNEMENT :
 - ANTICORP n'est PAS une agence ni une "anti-agence" : c'est un STUDIO.
-- Distinction clé : les "vidéos" B2B (corporate, institutionnelles, même émotionnelles) INFORMENT — c'est ce qu'ANTICORP dénonce. ANTICORP fait des PUBS et des FILMS : des objets à l'esthétique de cinéma, qui attrapent l'audience, la marquent, l'impriment, la mettent en mouvement. Le mot "vidéo" reste donc AUTORISÉ dans le discours (notamment pour désigner ce qu'on dénonce, ou le média en général) ; simplement, les productions d'ANTICORP sont des films / des pubs, pas des vidéos informatives.
+- DISTINCTION CLÉ : VIDÉO CORPORATE contre PUB B2B.
+  VIDÉO CORPORATE = ce que le fondateur a fait pendant des décennies et ce qu'ANTICORP dénonce : elle INFORME (interview du dirigeant, drone sur le siège, « depuis 1987… »), elle est souvent longue (plusieurs minutes), elle empile plusieurs messages, et elle n'est regardée que par le service com. Même soignée, même émotionnelle, elle reste de l'information.
+  PUB B2B = ce que fait ANTICORP : COURTE (15 secondes à 2 minutes), FORTE, IMPACTANTE, construite sur UNE IDÉE MAJEURE (une seule par film), à l'esthétique de cinéma. Elle attrape l'audience, la marque, s'imprime, met en mouvement : elle agit au lieu d'informer.
+  Une bonne réponse sur ce sujet oppose ces deux objets sur ces critères : informer ou agir, longue ou courte, plusieurs messages ou une seule idée, vue par le service com ou regardée jusqu'au bout. Le mot "vidéo" reste AUTORISÉ dans le discours (pour désigner la vidéo corporate qu'on dénonce, ou le média en général) ; les productions d'ANTICORP sont des pubs / des films, pas des vidéos informatives.
 - Cible : PME B2B 50-500 salariés, Sud-Est France, dirigeants / directeurs marketing qui aiment l'humour intelligent.
 - ANTICORP est une marque anti-bullshit : refuse le langage vide, les promesses floues, les superlatifs automatiques. On ne "vend" pas : on se fait acheter. Pas de ton commercial forcé, pas d'"offre exceptionnelle". Sélection, exigence, clarté, confiance calme (on attire, on ne chasse pas).
 - Cadence : 10 pubs B2B par an, plafond révisable en cas de succès (encore faut-il l'atteindre). C'est un cap de production réaliste, PAS un argument de rareté ni de prestige : ne jamais le présenter comme « pas une de plus ». Le reste du temps : préparation d'idées qui claquent.
@@ -321,18 +356,23 @@ TON DE LA MARQUE : drôle, percutant, intelligent, impertinent, féroce, disrupt
 CE QU'ANTICORP NE FAIT PAS : solutions synergiques et bullshit corporate, collaborateurs qui rient faux, musiques dramatiques sur logiciels de comptabilité, "Depuis 1987...", "l'humain au cœur de nos solutions transformationnelles", des vidéos informatives (qui n'informent que le service com).
 
 INTERDITS ABSOLUS DANS LE DISCOURS ANTICORP (une bonne réponse ne doit jamais contenir) :
-- Aucune date calendaire ni année précise (pas de "depuis 1987", pas de "en 2003"). EN REVANCHE, l'ancienneté du fondateur est AUTORISÉE et même encouragée : 25 ans d'expérience dans la réalisation de films corporate — 25 ans d'expérience du bullshit — c'est le déclencheur et la justification de la création d'ANTICORP.
+- Aucune date calendaire ni année précise propre à ANTICORP ou à son fondateur (pas de "depuis 1987", pas de "en 2003") ; seule exception : l'année d'une étude citée comme source (ex : « Oracle, 2022 »). EN REVANCHE, l'ancienneté du fondateur est AUTORISÉE et même encouragée : 25 ans d'expérience dans la réalisation de films corporate — 25 ans d'expérience du bullshit — c'est le déclencheur et la justification de la création d'ANTICORP. Le fondateur dit « 25 ans d'expérience du bullshit » ; le manifeste dit « 30 ans de films corporate » : les deux formules sont acceptées, ne jamais pénaliser l'une ou l'autre.
 - Aucune mention de "trilogie créative" (notion abandonnée).
 - Aucune liste de styles de réalisateurs connus (Tarantino, Wes Anderson, etc.) ni de "12 styles".
 - Aucune promesse de "style signature" figé — chaque client doit sentir que SON film aura SON propre style.
 
-DONNÉES B2B DOCUMENTÉES (à mobiliser si pertinent, sans en abuser) :
-- Attention humaine moyenne : 8,25 secondes (Microsoft, 2015).
-- Sites B2B avec vidéo : +65% de conversion (Swell AI, 2025).
-- 52% des marketeurs B2B jugent la vidéo comme meilleur ROI (Smart Insights, 2024).
-- Vidéos de moins de 30 secondes : 200% de completion en plus sur LinkedIn.
-- 93% des décideurs B2B disent que la vidéo influence leur décision d'achat (Wyzowl, 2024).
-- Neurosciences de l'humour : l'humour active le système de récompense dopaminergique (nucleus accumbens), rend le contenu 3 à 5 fois plus mémorable (encodage élaboratif) et abaisse les défenses/le scepticisme du spectateur. L'humour publicitaire le plus durable est celui qui laisse le spectateur compléter la révélation lui-même ("a smile in the mind", concept de McAlhone & Stuart).
+CHIFFRES OFFICIELS — SEULE RÉFÉRENCE CHIFFRÉE (ce sont ceux d'anticorp.fr, page d'accueil et FAQ ; toujours à citer avec leur source en quelques mots) :
+- 90 % des gens se souviennent mieux d'une pub qui les a fait rire. Source : Oracle Happiness Report, 2022 (12 000 personnes, 14 pays dont la France).
+- 72 % choisiraient une marque qui les a fait sourire plutôt qu'un concurrent qui ne l'a pas fait. Source : Oracle Happiness Report, 2022.
+- 69 % ouvriraient un email dont l'objet est drôle. Source : Oracle Happiness Report, 2022.
+- 95 % des dirigeants admettent ne pas oser l'humour, de peur de rater leur cible. Source : Oracle Happiness Report, 2022. Lecture du site : le terrain est presque entièrement libre.
+- +18 % d'attitude favorable à la marque quand l'humour est lié au produit. Source : Journal of Business Research, 2025 (quatre études expérimentales sur des acheteurs B2B ; Swani, Gulas & Dinsmore).
+- +40 % de considération d'achat quand une pub B2B ose sortir du moule. Source : LinkedIn × MAGNA Media Trials, 2024 (67 pubs testées, environ 1 700 décideurs). Même étude : 64 % des décideurs trouvent que les pubs de leur secteur manquent d'humour, et 60 % (« 6 sur 10 ») qu'elles manquent d'émotion.
+- 75 % des pubs B2B n'ont aucun impact commercial durable : une sur quatre seulement rapporte vraiment, et l'humour fait partie de ce quart. Source : System1, 2025 (150 000 pubs notées ; 1 % à peine atteignent le sommet émotionnel).
+- Neurologie (formule du site, sans chiffre) : le rire active le circuit de récompense du cerveau et abaisse les défenses ; on résiste moins à ce qui nous fait sourire. « C'est de la neurologie, pas de la fantaisie. »
+- Image sans source (à dire comme une image, jamais comme une statistique) : le prospect voit passer environ 4 000 messages publicitaires par jour.
+Nuance utile : les 4 chiffres Oracle ne sont pas présentés comme une étude B2B ; les chiffres B2B dédiés sont ceux du Journal of Business Research (acheteurs B2B) et de LinkedIn × MAGNA (décideurs).
+RÈGLES SUR LES CHIFFRES : n'utiliser QUE ceux-ci, avec la valeur exacte (ne jamais arrondir, déplacer ou inventer). ANTICORP ne promet aucun chiffre de ROI : on mesure au cas par cas (notoriété, vues qualifiées, complétion, contacts générés). Les anciens chiffres suivants ne figurent PAS sur le site et ne sont plus à utiliser : 8,25 secondes d'attention, +65 % de conversion avec vidéo, 52 % des marketeurs, 200 % de complétion sous 30 secondes, 93 % des décideurs influencés par la vidéo, « 3 à 5 fois plus mémorable ».
 
 MANIFESTE (esprit à retenir, jamais à réciter mot pour mot) : 25 ans de films corporate B2B propres, bien cadrés, livrés à l'heure — regardés seulement par le service com et personne d'autre. Le script classique (interview dirigeant, "ateliers", "proximité terrain", salle vitrée, drone coucher de soleil sur le siège, "Depuis 1987 nous accompagnons...") ne sert à rien : il ne change l'avis de personne et n'est pas mesurable. Le vrai problème n'est pas le format classique, c'est la PEUR de sortir du cadre sécurisant. ANTICORP répond par des pubs B2B drôles, surprenantes, précises et mesurées — sans drone de remplissage, sans effet waouh flou, juste des films qui servent.
 `;
@@ -378,7 +418,6 @@ const QUESTIONS = [
   {id:'q17', cat:'methode', q:"Qu'est-ce qui se passe si l'idée retenue à l'écriture ne me plaît pas du tout au tournage ?"},
   {id:'q18', cat:'preuve', q:"Vous avez des chiffres sérieux, ou c'est encore une histoire de \"tendance\" vidéo qu'on nous ressert depuis dix ans ?"},
   {id:'q19', cat:'preuve', q:"Comment vous prouvez qu'un film drôle est plus mémorable qu'un film institutionnel classique ? Vous avez des sources ?"},
-  {id:'q20', cat:'preuve', q:"\"93% des décideurs B2B influencés par la vidéo\", très bien, mais toutes les vidéos, même les mauvaises. Ça prouve quoi pour vous ?"},
   {id:'q21', cat:'preuve', q:"Après diffusion, vous mesurez quoi précisément ? Des vues, ou autre chose de plus sérieux ?"},
   {id:'q22', cat:'marque', q:"Pourquoi je ne vois jamais votre nom, Cyril Chauvin, dans tout ça ? Vous avez honte de votre propre expertise ?"},
   {id:'q23', cat:'marque', q:"ANTI-corp, c'est un nom assez agressif. Vous n'avez pas peur de braquer les entreprises que vous ciblez, justement ?"},
@@ -390,6 +429,10 @@ const QUESTIONS = [
   {id:'q29', cat:'prix', q:"Concrètement, qu'est-ce qui coûte cher chez vous : l'idée, le tournage, ou la stratégie de diffusion ?"},
   {id:'q30', cat:'methode', q:"Combien de temps entre le brief et la diffusion réelle du film ? Je n'ai pas six mois devant moi."},
   {id:'q31', cat:'preuve', q:"Vous n'avez pas encore lancé ANTICORP. De quel droit vous me parlez de mesure d'impact avant même d'avoir un cas client ?"},
+  {id:'q36', cat:'preuve', q:"Vos 90 % et vos 72 %, ça vient d'un sondage sur 12 000 personnes. Moi, je vends à des acheteurs industriels. Ça prouve quoi pour mon marché ?"},
+  {id:'q37', cat:'preuve', q:"Donnez-moi UN chiffre, un seul, avec sa source. Mais un chiffre B2B."},
+  {id:'q38', cat:'preuve', q:"75 % des pubs B2B n'ont aucun impact, c'est votre propre chiffre. Donc la mienne a trois chances sur quatre de ne servir à rien, non ?"},
+  {id:'q39', cat:'preuve', q:"95 % des dirigeants n'osent pas l'humour, dites-vous. Moi, je suis dans les 95. Pourquoi j'aurais tort ?"},
   {id:'q33', cat:'methode', q:"Vous résumez votre méthode en trois temps : creuser, fabriquer, armer. Expliquez-moi chacun en une phrase, comme si j'avais deux minutes."},
   {id:'q34', cat:'prix', q:"Votre plafond de 10 pubs par an, c'est un vrai plafond ou un argument marketing pour faire rare ?"},
   {id:'q35', cat:'methode', q:"C'est quoi le Build et c'est quoi le Run ? Et si le Build ne me plaît pas, je perds quoi ?"},
@@ -536,7 +579,7 @@ async function callClaude(systemPrompt, userPrompt){
     headers,
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
-      max_tokens: 1000,
+      max_tokens: 1600,
       system: systemPrompt,
       messages: [{role:"user", content:userPrompt}],
     })
@@ -561,6 +604,9 @@ function parseJsonLoose(text){
   return JSON.parse(slice);
 }
 
+const SCHEMA_SPEC = `Champ "schema" : un schéma TRÈS simple pour mémoriser la réponse modèle (on doit pouvoir le redessiner de tête en 10 secondes). Forme : {"type": "flux" | "versus" | "piliers" | "chiffre", "titre": "<3 à 5 mots>", "noeuds": [{"mot": "<1 à 3 mots>", "detail": "<8 mots maximum>"}], "a_retenir": "<LA phrase à retenir, 8 mots maximum>", "source": "<source du chiffre si type chiffre, sinon chaîne vide>"}.
+Choisis le type : "flux" = 3 ou 4 étapes dans l'ordre (ex : creuse, fabrique, arme) ; "versus" = EXACTEMENT 2 noeuds, à gauche ce qu'on dénonce ou l'autre option, à droite ce qu'ANTICORP fait ; "piliers" = 2 à 4 idées en parallèle ; "chiffre" = noeuds[0].mot est le chiffre exact du site (ex : "90 %") et detail ce qu'il dit, puis 0 à 2 noeuds de contexte. Uniquement des mots-clés, jamais de phrases longues, et les mêmes mots que dans reponse_modele.`;
+
 async function evaluateAnswer(question, personaLabel, userAnswer){
   const system = `Tu es le DIRIGEANT qui interroge un porteur de projet sur la marque ANTICORP.
 Persona actuelle : ${personaLabel}.
@@ -568,13 +614,15 @@ Voici toute la documentation officielle de la marque ANTICORP que tu dois utilis
 ${ANTICORP_CONTEXT}
 
 Ta tâche : évaluer la réponse orale donnée par le porteur de projet à ta question, comme le ferait ce dirigeant sceptique, exigeant, en tête-à-tête. Tu dois :
-1. Vérifier la justesse par rapport aux faits ANTICORP ci-dessus (positionnement, méthode, interdits, chiffres).
+1. Vérifier la justesse par rapport aux faits ANTICORP ci-dessus (positionnement, méthode, interdits, et chiffres : seuls ceux de la section CHIFFRES OFFICIELS sont valides, avec la bonne valeur).
 2. Vérifier que le ton est juste (percutant, confiant, jamais donneur de leçons, jamais commercial/bullshit).
-3. Repérer si la réponse contient un des INTERDITS ABSOLUS listés (date calendaire/année précise, "trilogie créative", liste de réalisateurs connus, promesse de style figé). Attention : parler des 25 ans d'expérience du fondateur et utiliser le mot "vidéo" ne sont PAS des fautes — ce sont même des atouts s'ils servent la distinction vidéos B2B informatives (dénoncées) / films-pubs ANTICORP — si oui, c'est une faute grave.
+3. Repérer si la réponse contient un des INTERDITS ABSOLUS listés (date calendaire/année précise propre à ANTICORP, "trilogie créative", liste de réalisateurs connus, promesse de style figé) : si oui, c'est une faute grave. Ne sont PAS des fautes : parler des 25 ans d'expérience du fondateur, utiliser le mot "vidéo" pour la distinction vidéos B2B informatives (dénoncées) / films-pubs ANTICORP, ou citer l'année d'une étude comme source.
+3bis. Si le porteur cite un chiffre : il doit figurer dans CHIFFRES OFFICIELS, avec la bonne valeur. Un chiffre inventé, arrondi, déformé ou absent de la liste (ex : 8,25 secondes, +65 %, 93 %) est une faute : signale-le dans points_faibles (« chiffre absent du site ») et donne l'équivalent sourcé dans la réponse modèle. Citer la source en quelques mots est un plus.
 4. Donner un score de 1 (mauvais, hors-sujet ou contredit la doctrine) à 5 (réponse quasi parfaite, prête à être dite telle quelle).
 
 Réponds UNIQUEMENT en JSON strict, sans texte autour, avec cette forme exacte :
-{"score": <entier 1-5>, "verdict": "<réaction du dirigeant en 1-2 phrases, dans son personnage, orale et directe>", "points_forts": ["<court>", "..."], "points_faibles": ["<court>", "..."], "reponse_modele": "<une réponse orale idéale à cette question précise, 3 à 6 phrases, dans le ton ANTICORP : percutante, confiante, sans bullshit, jamais donneuse de leçons, sans aucun des interdits listés>"}
+{"score": <entier 1-5>, "verdict": "<réaction du dirigeant en 1-2 phrases, dans son personnage, orale et directe>", "points_forts": ["<court>", "..."], "points_faibles": ["<court>", "..."], "reponse_modele": "<réponse orale idéale : 2 à 3 phrases COURTES, 45 mots maximum (une quinzaine de secondes à dire). Ton ANTICORP : percutante, confiante, sans bullshit, sans leçon, sans interdit. Une réponse, une seule preuve ou image, puis stop. Chiffres du site uniquement, avec leur source>", "schema": {"type": "...", "titre": "...", "noeuds": [{"mot": "...", "detail": "..."}], "a_retenir": "...", "source": ""}}
+${SCHEMA_SPEC}
 Les tableaux points_forts et points_faibles contiennent 1 à 3 éléments chacun, courts (une phrase max). Si la réponse est vide ou hors-sujet, score=1 et points_forts=[].`;
 
   const user = `QUESTION POSÉE : "${question}"
@@ -598,10 +646,11 @@ ${ANTICORP_CONTEXT}
 - Le pitch fait sentir la douleur (25 ans d'expérience de films corporate qui ne servent à rien : c'est le déclencheur d'ANTICORP) sans être pleurnichard.
 - Le pitch évite les interdits (années/dates calendaires, "trilogie créative", liste de réalisateurs, style figé) ; mentionner les 25 ans d'expérience est un plus.
 - Le ton est confiant, drôle ou percutant, jamais commercial ni donneur de leçons.
-- Le pitch tient en environ 60 secondes à l'oral (~130-160 mots), pas plus.
+- Le pitch tient en 60 secondes à l'oral maximum (~100 à 150 mots), pas plus. Si le porteur cite un chiffre, il doit figurer dans CHIFFRES OFFICIELS (bonne valeur, source).
 
 Réponds UNIQUEMENT en JSON strict :
-{"score": <entier 1-5>, "verdict": "<réaction du dirigeant, 1-2 phrases, orale>", "points_forts": ["..."], "points_faibles": ["..."], "reponse_modele": "<un pitch modèle de 60 secondes, dans le ton ANTICORP, prêt à être appris par cœur>"}`;
+{"score": <entier 1-5>, "verdict": "<réaction du dirigeant, 1-2 phrases, orale>", "points_forts": ["..."], "points_faibles": ["..."], "reponse_modele": "<un pitch modèle d'environ 100 mots (45 secondes à l'oral), ton ANTICORP, prêt à être appris par cœur, chiffres du site uniquement>", "schema": {"type": "flux", "titre": "...", "noeuds": [{"mot": "...", "detail": "..."}], "a_retenir": "...", "source": ""}}
+${SCHEMA_SPEC}`;
 
   const user = `PITCH DONNÉ (à l'oral, retranscrit) :\n"${pitchText}"\n\nÉvalue ce pitch.`;
   const raw = await callClaude(system, user);
@@ -612,7 +661,7 @@ async function generateSurpriseQuestion(){
   const system = `Tu es un dirigeant B2B sceptique, pressé, parfois un peu hostile, en rendez-vous avec le porteur du projet ANTICORP.
 Documentation ANTICORP :
 ${ANTICORP_CONTEXT}
-Ta tâche : poser UNE question piège, courte (1-2 phrases), orale, difficile, sur ANTICORP — jamais posée de façon banale, toujours avec un vrai angle d'attaque (prix, risque, crédibilité, méthode, preuve, positionnement, ou marque). Sois exigeant, direct, parfois un peu provocateur, mais reste crédible et professionnel (pas d'insulte).
+Ta tâche : poser UNE question piège, courte (1-2 phrases), orale, difficile, sur ANTICORP — jamais posée de façon banale, toujours avec un vrai angle d'attaque (prix, risque, crédibilité, méthode, preuve, positionnement, ou marque). Sois exigeant, direct, parfois un peu provocateur, mais reste crédible et professionnel (pas d'insulte). Si ta question s'appuie sur un chiffre, utilise uniquement ceux de la section CHIFFRES OFFICIELS.
 Réponds UNIQUEMENT en JSON strict : {"persona": "<description courte du dirigeant qui pose la question, ex: 'Le DAF, sec, va droit au but'>", "question": "<la question>"}`;
   const user = `Génère une nouvelle question piège, différente des classiques (prix, risque, ROI déjà beaucoup utilisés), surprends le porteur de projet.`;
   const raw = await callClaude(system, user);
@@ -820,8 +869,8 @@ function renderLoadingShell(){
 function renderHome(){
   const p = STATE.progress;
   const total = QUESTIONS.length;
-  const seen = Object.keys(p.questions).length;
-  const mastered = Object.values(p.questions).filter(s=>s.box>=1).length;
+  const seen = QUESTIONS.filter(q=>p.questions[q.id]).length;
+  const mastered = QUESTIONS.filter(q=>p.questions[q.id] && p.questions[q.id].box>=1).length;
   const dueCount = QUESTIONS.filter(q=>{
     const st = p.questions[q.id];
     return !st || isDue(st);
@@ -860,7 +909,7 @@ function renderHome(){
 
   <div class="panel">
     <p class="panel-title">HISTORIQUE</p>
-    <p>Vos ${p.log?p.log.length:0} derniers échanges avec le dirigeant, gardés sur cet appareil : ce que vous avez dit, la note obtenue, et ce que vous auriez dû dire.</p>
+    <p>Vos ${p.log?p.log.length:0} derniers échanges avec le dirigeant, gardés sur cet appareil : ce que vous avez dit, la note obtenue, et la réponse modèle avec son schéma.</p>
     <button class="btn ghost" id="btn-history">Voir l'historique</button>
   </div>
 
@@ -928,8 +977,9 @@ function renderHistory(){
     const dateStr = d.toLocaleDateString('fr-FR', {day:'2-digit', month:'2-digit'}) + ' ' + d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
     return `<div class="history-item">
       <div class="h-top"><span>${dateStr} · ${e.type==='pitch'?'Pitch':e.type==='surprise'?'Question surprise':'Question'}</span><span class="h-score ${cls}">${e.score}/5</span></div>
-      <div class="h-q">« ${e.question} »</div>
-      <div class="h-a">${e.answer}</div>
+      <div class="h-q">« ${esc(e.question)} »</div>
+      <div class="h-a">${esc(e.answer)}</div>
+      ${e.model ? `<details class="h-model"><summary>Réponse modèle et schéma</summary><div class="model-answer">${esc(e.model)}</div>${renderSchema(e.schema)}</details>` : ''}
     </div>`;
   }).join('');
   return `
@@ -1086,6 +1136,35 @@ function renderSession(){
   return body;
 }
 
+function esc(s){
+  return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function renderSchema(sc){
+  try{
+    if(!sc || !Array.isArray(sc.noeuds) || sc.noeuds.length===0) return '';
+    const type = ['flux','versus','piliers','chiffre'].includes(sc.type) ? sc.type : 'piliers';
+    const nodes = sc.noeuds.slice(0,4).filter(n=>n && (n.mot||n.detail));
+    if(!nodes.length) return '';
+    const node = (n, extra, mark) => '<div class="sc-node ' + (extra||'') + '"><div class="sc-mot">' + (mark||'') + esc(n.mot) + '</div>' + (n.detail ? '<div class="sc-detail">' + esc(n.detail) + '</div>' : '') + '</div>';
+    let body = '';
+    if(type==='flux'){
+      body = '<div class="sc-flux">' + nodes.map(n=>node(n)).join('<div class="sc-arrow" aria-hidden="true"></div>') + '</div>';
+    } else if(type==='versus' && nodes.length>=2){
+      body = '<div class="sc-versus">' + node(nodes[0],'left','<span class="sc-mark">✗</span>') + node(nodes[1],'right','<span class="sc-mark">✓</span>') + '</div>';
+    } else if(type==='chiffre'){
+      const big = nodes[0], rest = nodes.slice(1);
+      body = '<div class="sc-chiffre"><div class="sc-big">' + esc(big.mot) + '</div><div class="sc-bigdetail">' + esc(big.detail) + '</div>' + rest.map(n=>'<div class="sc-sub"><strong>' + esc(n.mot) + '</strong> ' + esc(n.detail) + '</div>').join('') + '</div>';
+    } else {
+      body = '<div class="sc-piliers">' + nodes.map(n=>node(n)).join('') + '</div>';
+    }
+    return '<div class="schema"><div class="sc-title">Schéma' + (sc.titre ? ' : ' + esc(sc.titre) : '') + '</div>' + body
+      + (type==='chiffre' && sc.source ? '<div class="sc-source">Source : ' + esc(sc.source) + '</div>' : '')
+      + (sc.a_retenir ? '<div class="sc-keep">À retenir : ' + esc(sc.a_retenir) + '</div>' : '')
+      + '</div>';
+  }catch(e){ return ''; }
+}
+
 function renderEvalBlock(ev){
   const cls = scoreClass(ev.score);
   const fortsHtml = (ev.points_forts||[]).map(x=>`<li>${x}</li>`).join('');
@@ -1103,8 +1182,9 @@ function renderEvalBlock(ev){
     ${faiblesHtml ? `<div><strong style="font-size:12px;">À corriger</strong><ul class="feedback-list">${faiblesHtml}</ul></div>` : ''}
     <div class="model-answer">
       <div class="model-answer-label">Réponse modèle</div>
-      ${ev.reponse_modele}
+      ${esc(ev.reponse_modele)}
     </div>
+    ${renderSchema(ev.schema)}
   `;
 }
 
@@ -1153,7 +1233,7 @@ function attachSessionHandlers(){
           applyResult(STATE.progress, id, ev.score, val);
           STATE.sessionResults.push({id, score:ev.score, idx:STATE.sessionIndex});
         }
-        pushLog(STATE.progress, {date:new Date().toISOString(), question:q, answer:val, score:ev.score, type: isSurprise ? 'surprise':'question'});
+        pushLog(STATE.progress, {date:new Date().toISOString(), question:q, answer:val, score:ev.score, type: isSurprise ? 'surprise':'question', model:ev.reponse_modele||'', schema:ev.schema||null});
         await saveProgress(STATE.progress);
         render();
       }catch(err){
@@ -1248,7 +1328,7 @@ function attachPitchHandlers(){
         STATE.draftAnswer = '';
         STATE.progress.stats.pitchAttempts += 1;
         if(ev.score > STATE.progress.stats.pitchBestScore) STATE.progress.stats.pitchBestScore = ev.score;
-        pushLog(STATE.progress, {date:new Date().toISOString(), question:'Pitch 60 secondes', answer:val, score:ev.score, type:'pitch'});
+        pushLog(STATE.progress, {date:new Date().toISOString(), question:'Pitch 60 secondes', answer:val, score:ev.score, type:'pitch', model:ev.reponse_modele||'', schema:ev.schema||null});
         await saveProgress(STATE.progress);
         render();
       }catch(err){
